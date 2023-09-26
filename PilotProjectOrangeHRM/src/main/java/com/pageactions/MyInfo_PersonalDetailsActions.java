@@ -24,46 +24,54 @@ public class MyInfo_PersonalDetailsActions {
 
 	// set FirstName
 	public void setFirstName(String strFirstName) {
+		myInfo_PersonalDetailsObjects.EmpFirstNameInput.clear();
 		myInfo_PersonalDetailsObjects.EmpFirstNameInput.sendKeys(strFirstName);
 	}
 
 	// set LastName
 	public void setLastName(String strLastName) {
+		myInfo_PersonalDetailsObjects.EmpLastNameInput.clear();
 		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(strLastName);
 	}
 
 	// set EmployeeId
 	public void setEmployeeId(String strEmployeeId) {
+		myInfo_PersonalDetailsObjects.EmployeeId.clear();
 		myInfo_PersonalDetailsObjects.EmployeeId.sendKeys(strEmployeeId);
 	}
 
 	// set DriverLicenseNumber
 	public void setDriverLicenseNumber(String strDriverLicenseNumber) {
+		myInfo_PersonalDetailsObjects.DriverLicenseNumber.clear();
 		myInfo_PersonalDetailsObjects.DriverLicenseNumber.sendKeys(strDriverLicenseNumber);
 	}
 
 	// set ExpiryDate
 	public void setExpiryDate(String strExpiryDate) {
+		myInfo_PersonalDetailsObjects.ExpiryDate.clear();
 		myInfo_PersonalDetailsObjects.ExpiryDate.sendKeys(strExpiryDate);
 	}
 
 	// set Nationality
 	public void setNationality(String strNationality) {
+		myInfo_PersonalDetailsObjects.Nationality.click();
 		myInfo_PersonalDetailsObjects.Nationality.sendKeys(strNationality);
 	}
 
 	// set DateOfBirth
 	public void setDateOfBirth(String strDateOfBirth) {
+		myInfo_PersonalDetailsObjects.DateOfBirth.clear();
 		myInfo_PersonalDetailsObjects.DateOfBirth.sendKeys(strDateOfBirth);
 	}
 
 	// set Gender
-	public void setGender(String strGender) {
-		myInfo_PersonalDetailsObjects.Gender.sendKeys(strGender);
+	public void setGender() {
+		myInfo_PersonalDetailsObjects.Gender.click();
 	}
 
 	// set MilitaryService
 	public void setMilitaryService(String strMilitaryService) {
+		myInfo_PersonalDetailsObjects.MilitaryService.clear();
 		myInfo_PersonalDetailsObjects.MilitaryService.sendKeys(strMilitaryService);
 	}
 
@@ -105,10 +113,10 @@ public class MyInfo_PersonalDetailsActions {
 		this.setLastName(strLastName);
 		this.setEmployeeId(strEmployeeId);
 		this.setDriverLicenseNumber(strDriverLicenseNumber);
-		this.setExpiryDate(strExpiryDate);
-		this.setNationality(strNationality);
-		this.setDateOfBirth(strDateOfBirth);
-		this.setGender(strGender);
+//		this.setExpiryDate(strExpiryDate);
+//		this.setNationality(strNationality);
+//		this.setDateOfBirth(strDateOfBirth);
+		this.setGender();
 		this.setMilitaryService(strMilitaryService);
 		this.clickSaveBtn();
 

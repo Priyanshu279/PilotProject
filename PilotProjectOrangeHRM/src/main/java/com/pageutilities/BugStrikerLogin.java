@@ -13,9 +13,9 @@ public class BugStrikerLogin {
 		loginBS.login("Bug Striker","admin123");
 	}
 	
-	public void setLogoutBS() {
-		logoutBS.setLogOut();
-	}
+//	public void setLogoutBS() {
+//		logoutBS.setLogOut();
+//	}
 	
 	public void WindowScroll(String num){
 		JavascriptExecutor jss = (JavascriptExecutor)DriverClass.getDriver();
