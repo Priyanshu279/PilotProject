@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.pageobjects.MyInfo_PersonalDetailsObjects;
 import com.pageutilities.DriverClass;
 
+
 public class MyInfo_PersonalDetailsActions {
 
 	MyInfo_PersonalDetailsObjects myInfo_PersonalDetailsObjects = null;
@@ -113,9 +114,9 @@ public class MyInfo_PersonalDetailsActions {
 		this.setLastName(strLastName);
 		this.setEmployeeId(strEmployeeId);
 		this.setDriverLicenseNumber(strDriverLicenseNumber);
-//		this.setExpiryDate(strExpiryDate);
-//		this.setNationality(strNationality);
-//		this.setDateOfBirth(strDateOfBirth);
+		this.setExpiryDate(strExpiryDate);
+		this.setNationality(strNationality);
+		this.setDateOfBirth(strDateOfBirth);
 		this.setGender();
 		this.setMilitaryService(strMilitaryService);
 		this.clickSaveBtn();
