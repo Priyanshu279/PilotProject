@@ -13,9 +13,5 @@ public class MyInfo_PersonalDetailsObjects {
 	
 	@FindBy(xpath="//input[@placeholder=\"Last Name\"]")
 	public static WebElement EmpLastNameInput;
-	 
-	@FindBy(xpath="")
-	public static WebElement ;
-	
 	
 }

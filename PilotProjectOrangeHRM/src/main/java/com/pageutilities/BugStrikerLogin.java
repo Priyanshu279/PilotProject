@@ -17,7 +17,7 @@ public class BugStrikerLogin {
 		logoutBS.setLogOut();
 	}
 	
-	public void WindowScroll(String num){
+	public static void WindowScroll(String num){
 		JavascriptExecutor jss = (JavascriptExecutor)DriverClass.getDriver();
         jss.executeScript("window.scrollBy(0,"+num+")", "");
 	}
