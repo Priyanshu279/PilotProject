@@ -16,6 +16,9 @@ public class Admin_OrganizationObj {
 	@FindBy(xpath = "//form[@class='oxd-form']/div/div/div/div/div[2]/input")
 	public static WebElement enterOrganization;
 	
+	@FindBy(xpath ="//a[contains(text(),'Locations')]") 
+	public static WebElement selectLocationOp;
+	
 	@FindBy(xpath = "//div[text()='-- Select --']")
 	public static WebElement selectLocation;
 	
