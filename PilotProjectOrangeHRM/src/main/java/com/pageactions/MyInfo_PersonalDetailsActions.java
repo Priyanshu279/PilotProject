@@ -6,17 +6,21 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.pageobjects.MyInfo_PersonalDetailsObjects;
 import com.pageutilities.DriverClass;
+
 
 public class MyInfo_PersonalDetailsActions {
 
 	MyInfo_PersonalDetailsObjects myInfo_PersonalDetailsObjects = null;
 	String strFirstName, strLastName, strEmployeeId, strDriverLicenseNumber, strExpiryDate, strNationality,
 			 strDateOfBirth, strGender, strMilitaryService;
-
+	
 	public MyInfo_PersonalDetailsActions() {
 		this.myInfo_PersonalDetailsObjects = new MyInfo_PersonalDetailsObjects();
 		PageFactory.initElements(DriverClass.getDriver(), myInfo_PersonalDetailsObjects);
@@ -24,46 +28,54 @@ public class MyInfo_PersonalDetailsActions {
 
 	// set FirstName
 	public void setFirstName(String strFirstName) {
+		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.EmpFirstNameInput.sendKeys(strFirstName);
 	}
 
 	// set LastName
 	public void setLastName(String strLastName) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(strLastName);
 	}
 
 	// set EmployeeId
 	public void setEmployeeId(String strEmployeeId) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.EmployeeId.sendKeys(strEmployeeId);
 	}
 
 	// set DriverLicenseNumber
 	public void setDriverLicenseNumber(String strDriverLicenseNumber) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.DriverLicenseNumber.sendKeys(strDriverLicenseNumber);
 	}
 
 	// set ExpiryDate
 	public void setExpiryDate(String strExpiryDate) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.ExpiryDate.sendKeys(strExpiryDate);
 	}
 
 	// set Nationality
-	public void setNationality(String strNationality) {
-		myInfo_PersonalDetailsObjects.Nationality.sendKeys(strNationality);
-	}
+//	public void setNationality(String strNationality) {
+//		myInfo_PersonalDetailsObjects.Nationality.click();
+//		myInfo_PersonalDetailsObjects.Nationality.sendKeys(strNationality);
+//	}
 
 	// set DateOfBirth
-	public void setDateOfBirth(String strDateOfBirth) {
-		myInfo_PersonalDetailsObjects.DateOfBirth.sendKeys(strDateOfBirth);
-	}
+//	public void setDateOfBirth(String strDateOfBirth) {
+////		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
+//		myInfo_PersonalDetailsObjects.DateOfBirth.sendKeys(strDateOfBirth);
+//	}
 
 	// set Gender
-	public void setGender(String strGender) {
-		myInfo_PersonalDetailsObjects.Gender.sendKeys(strGender);
+	public void setGender() {
+		myInfo_PersonalDetailsObjects.Gender.click();
 	}
 
 	// set MilitaryService
 	public void setMilitaryService(String strMilitaryService) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(Keys.CONTROL+"a",Keys.BACK_SPACE);
 		myInfo_PersonalDetailsObjects.MilitaryService.sendKeys(strMilitaryService);
 	}
 
@@ -96,7 +108,7 @@ public class MyInfo_PersonalDetailsActions {
 		strEmployeeId = prop.getProperty("EmployeeId1");
 		strDriverLicenseNumber = prop.getProperty("DriverLicenseNumber1");
 		strExpiryDate = prop.getProperty("ExpiryDate1");
-		strNationality = prop.getProperty("Nationality1");
+//		strNationality = prop.getProperty("Nationality1");
 		strDateOfBirth = prop.getProperty("DateOfBirth1");
 		strGender = prop.getProperty("Gender1");
 		strMilitaryService = prop.getProperty("MilitaryService1");
@@ -106,9 +118,9 @@ public class MyInfo_PersonalDetailsActions {
 		this.setEmployeeId(strEmployeeId);
 		this.setDriverLicenseNumber(strDriverLicenseNumber);
 		this.setExpiryDate(strExpiryDate);
-		this.setNationality(strNationality);
-		this.setDateOfBirth(strDateOfBirth);
-		this.setGender(strGender);
+//		this.setNationality(strNationality);
+//		this.setDateOfBirth(strDateOfBirth);
+		this.setGender();
 		this.setMilitaryService(strMilitaryService);
 		this.clickSaveBtn();
 
