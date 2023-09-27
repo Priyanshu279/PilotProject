@@ -1,6 +1,5 @@
 package com.pageactions;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 
 import com.pageobjects.Admin_QualificationObj;
