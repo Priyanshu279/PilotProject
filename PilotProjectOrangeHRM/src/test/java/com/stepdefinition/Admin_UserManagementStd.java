@@ -7,9 +7,10 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 
 import com.pageactions.Admin_UserManagementActions;
-import com.pageutilities.BugStrikerLogin;
+import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.en.Given;
@@ -18,7 +19,7 @@ import io.cucumber.java.en.When;
 
 public class Admin_UserManagementStd {
 	Admin_UserManagementActions aum = new Admin_UserManagementActions();
-	BugStrikerLogin bs = new BugStrikerLogin();
+	BugStriker bs = new BugStriker();
 
 	@Given("Select Admin")
 	public void select_admin() {

@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import com.pageactions.Admin_OrganizationActions;
-import com.pageutilities.BugStrikerLogin;
+import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.en.Then;
@@ -49,7 +49,7 @@ public class Admin_Organization_LocationStd {
 	
 	@Then("get the user and validate the user by it location")
 	public void get_the_user_and_validate_the_user_by_it_location() throws IOException {
-		BugStrikerLogin.WindowScroll("200");
+		BugStriker.WindowScroll("200");
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\OrganiztionSearch.png"));
 	}

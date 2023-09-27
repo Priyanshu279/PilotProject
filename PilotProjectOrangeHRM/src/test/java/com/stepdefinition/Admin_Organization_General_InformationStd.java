@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeMethod;
 
 import com.pageactions.Admin_OrganizationActions;
 import com.pageutilities.DriverClass;
@@ -36,5 +37,4 @@ public class Admin_Organization_General_InformationStd {
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\OrganizationEdited.png"));
 	}
-	
 }

@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.pageutilities.BugStrikerLogin;
+import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.After;
@@ -15,7 +15,7 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.When;
 
 public class HooKs {
-	BugStrikerLogin bs = new BugStrikerLogin();
+	BugStriker bs = new BugStriker();
 		
 	@When("Use enter login details")
 	public void Use_enter_login_details(){
