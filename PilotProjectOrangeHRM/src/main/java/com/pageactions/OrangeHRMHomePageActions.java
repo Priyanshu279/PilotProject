@@ -5,10 +5,10 @@ import org.openqa.selenium.support.PageFactory;
 import com.pageobjects.OrangeHRMHomePage;
 import com.pageutilities.DriverClass;
 
-public class OrangeHRMHomePageAction {
+public class OrangeHRMHomePageActions {
 	OrangeHRMHomePage homeLocator = null;
 	
-	public OrangeHRMHomePageAction() {
+	public OrangeHRMHomePageActions() {
 		// TODO Auto-generated constructor stub
 		
 		this.homeLocator = new OrangeHRMHomePage();

@@ -1,4 +1,4 @@
-Feature: Validating the Admin Functionality in Organization
+Feature: Validating the Admin Functionality in Organization in Qualification
 
 Background:
 Given Open Browser OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
