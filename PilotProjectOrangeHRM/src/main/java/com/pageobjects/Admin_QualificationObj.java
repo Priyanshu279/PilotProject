@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Admin_QualificationObj {
 	
-		@FindBy(xpath = "//a[text()='Qualifications ']")
+		@FindBy(xpath = "//header/div[2]/nav[1]/ul[1]/li[4]/span[1]")
 		public static WebElement selectQualification;
 		
 		@FindBy(xpath = "//a[text()='Skills']")

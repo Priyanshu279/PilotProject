@@ -6,6 +6,7 @@ When Use enter login details
 And click the Login btn
 Given Select Admin
 
+@ValidatingPayGrade
 Scenario: Checking the functionality Pay Grades in Job
 And Select Job and click on Pay Grades
 When Click on Add and fill the details of Pay Grades
