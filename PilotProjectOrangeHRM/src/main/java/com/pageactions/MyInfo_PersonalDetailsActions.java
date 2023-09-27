@@ -24,46 +24,46 @@ public class MyInfo_PersonalDetailsActions {
 	}
 
 	// set FirstName
-	public void setFirstName(String strFirstName) {
-		myInfo_PersonalDetailsObjects.EmpFirstNameInput.clear();
-		myInfo_PersonalDetailsObjects.EmpFirstNameInput.sendKeys(strFirstName);
-	}
+//	public void setFirstName(String strFirstName) {
+//		myInfo_PersonalDetailsObjects.EmpFirstNameInput.clear();
+//		myInfo_PersonalDetailsObjects.EmpFirstNameInput.sendKeys(strFirstName);
+//	}
 
 	// set LastName
-	public void setLastName(String strLastName) {
-		myInfo_PersonalDetailsObjects.EmpLastNameInput.clear();
-		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(strLastName);
-	}
+//	public void setLastName(String strLastName) {
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.clear();
+//		myInfo_PersonalDetailsObjects.EmpLastNameInput.sendKeys(strLastName);
+//	}
 
 	// set EmployeeId
-	public void setEmployeeId(String strEmployeeId) {
-		myInfo_PersonalDetailsObjects.EmployeeId.clear();
-		myInfo_PersonalDetailsObjects.EmployeeId.sendKeys(strEmployeeId);
-	}
+//	public void setEmployeeId(String strEmployeeId) {
+//		myInfo_PersonalDetailsObjects.EmployeeId.clear();
+//		myInfo_PersonalDetailsObjects.EmployeeId.sendKeys(strEmployeeId);
+//	}
 
 	// set DriverLicenseNumber
-	public void setDriverLicenseNumber(String strDriverLicenseNumber) {
-		myInfo_PersonalDetailsObjects.DriverLicenseNumber.clear();
-		myInfo_PersonalDetailsObjects.DriverLicenseNumber.sendKeys(strDriverLicenseNumber);
-	}
+//	public void setDriverLicenseNumber(String strDriverLicenseNumber) {
+//		myInfo_PersonalDetailsObjects.DriverLicenseNumber.clear();
+//		myInfo_PersonalDetailsObjects.DriverLicenseNumber.sendKeys(strDriverLicenseNumber);
+//	}
 
 	// set ExpiryDate
-	public void setExpiryDate(String strExpiryDate) {
-		myInfo_PersonalDetailsObjects.ExpiryDate.clear();
-		myInfo_PersonalDetailsObjects.ExpiryDate.sendKeys(strExpiryDate);
-	}
+//	public void setExpiryDate(String strExpiryDate) {
+//		myInfo_PersonalDetailsObjects.ExpiryDate.clear();
+//		myInfo_PersonalDetailsObjects.ExpiryDate.sendKeys(strExpiryDate);
+//	}
 
 	// set Nationality
-	public void setNationality(String strNationality) {
-		myInfo_PersonalDetailsObjects.Nationality.click();
-		myInfo_PersonalDetailsObjects.Nationality.sendKeys(strNationality);
-	}
+//	public void setNationality(String strNationality) {
+//		myInfo_PersonalDetailsObjects.Nationality.click();
+//		myInfo_PersonalDetailsObjects.Nationality.sendKeys(strNationality);
+//	}
 
 	// set DateOfBirth
-	public void setDateOfBirth(String strDateOfBirth) {
-		myInfo_PersonalDetailsObjects.DateOfBirth.clear();
-		myInfo_PersonalDetailsObjects.DateOfBirth.sendKeys(strDateOfBirth);
-	}
+//	public void setDateOfBirth(String strDateOfBirth) {
+//		myInfo_PersonalDetailsObjects.DateOfBirth.clear();
+//		myInfo_PersonalDetailsObjects.DateOfBirth.sendKeys(strDateOfBirth);
+//	}
 
 	// set Gender
 	public void setGender() {
@@ -71,10 +71,10 @@ public class MyInfo_PersonalDetailsActions {
 	}
 
 	// set MilitaryService
-	public void setMilitaryService(String strMilitaryService) {
-		myInfo_PersonalDetailsObjects.MilitaryService.clear();
-		myInfo_PersonalDetailsObjects.MilitaryService.sendKeys(strMilitaryService);
-	}
+//	public void setMilitaryService(String strMilitaryService) {
+//		myInfo_PersonalDetailsObjects.MilitaryService.clear();
+//		myInfo_PersonalDetailsObjects.MilitaryService.sendKeys(strMilitaryService);
+//	}
 
 	// save button
 	public void clickSaveBtn() {
@@ -110,15 +110,15 @@ public class MyInfo_PersonalDetailsActions {
 		strGender = prop.getProperty("Gender1");
 		strMilitaryService = prop.getProperty("MilitaryService1");
 
-		this.setFirstName(strFirstName);
-		this.setLastName(strLastName);
-		this.setEmployeeId(strEmployeeId);
-		this.setDriverLicenseNumber(strDriverLicenseNumber);
-		this.setExpiryDate(strExpiryDate);
-		this.setNationality(strNationality);
-		this.setDateOfBirth(strDateOfBirth);
+//		this.setFirstName(strFirstName);
+//		this.setLastName(strLastName);
+//		this.setEmployeeId(strEmployeeId);
+//		this.setDriverLicenseNumber(strDriverLicenseNumber);
+//		this.setExpiryDate(strExpiryDate);
+//		this.setNationality(strNationality);
+//		this.setDateOfBirth(strDateOfBirth);
 		this.setGender();
-		this.setMilitaryService(strMilitaryService);
+//		this.setMilitaryService(strMilitaryService);
 		this.clickSaveBtn();
 
 	}
