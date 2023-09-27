@@ -5,10 +5,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class MyInfo_PersonalDetailsObjects {
 
-	@FindBy(xpath="//input[@placeholder=\"First Name\"]")
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[1]/div[2]/input")
 	public static WebElement EmpFirstNameInput;
 	
-	@FindBy(xpath="//input[@placeholder=\"Last Name\"]")
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[3]/div[2]/input")
 	public static WebElement EmpLastNameInput;
 	 
 	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input")

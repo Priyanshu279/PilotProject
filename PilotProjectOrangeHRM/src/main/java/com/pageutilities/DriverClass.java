@@ -7,7 +7,6 @@ package com.pageutilities;
 */
 
 import java.time.Duration;
-package com.pageutilities;
 
 import java.io.File;
 import java.io.IOException;
@@ -79,3 +78,4 @@ public class DriverClass {
 
 		driverClass = null;
 	}
+}
