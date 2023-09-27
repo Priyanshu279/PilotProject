@@ -1,9 +1,12 @@
+package com.pageutilities;
+
 /**
 *	@ Driver Class for all the methods and constructor.
 *	@author Bug Strikers (Expleo)
 *	@since JDK17 22/09/2023
 */
 
+import java.time.Duration;
 package com.pageutilities;
 
 import java.io.File;
@@ -18,6 +21,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.java.After;
 
 public class DriverClass {
 
@@ -35,7 +40,6 @@ public class DriverClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
 	}
 
-	// This method utilizes explicit wait, waiting for a given WebElement to become clickable.
 	public static void explicitWaitClickable(WebElement explicitWait) {
 		wait.until(ExpectedConditions.elementToBeClickable(explicitWait));
 	}
@@ -44,17 +48,14 @@ public class DriverClass {
 		wait.until(ExpectedConditions.visibilityOf(explicitWait));
 	}
 
-	// Opens a web page by navigating the WebDriver to the provided URL.
 	public static void openPage(String url) {
 		driver.get(url);
 	}
-
-	// Retrieves the WebDriver instance, allowing external code to access it.
+  
 	public static WebDriver getDriver() {
 		return driver;
 	}
 
-	// Initializes the DriverClass if it hasn't been already, creating a new WebDriver instance if necessary.
 	public static void setUpDriver() {
 		if (driverClass == null) {
 			driverClass = new DriverClass();
@@ -75,8 +76,6 @@ public class DriverClass {
 		if (driver != null) {
 			driver.close();
 		}
-		
+
 		driverClass = null;
 	}
-		
-}

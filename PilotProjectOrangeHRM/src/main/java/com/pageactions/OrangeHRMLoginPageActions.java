@@ -11,6 +11,29 @@ public class OrangeHRMLoginPageActions {
 	
 	public OrangeHRMLoginPageActions() {
 		this.loginPageLocators = new OrangeHRMLocator();
+
+		PageFactory.initElements(DriverClass.getDriver(), loginPageLocators);
+	}
+
+	public void setUserName(String usname) {
+		loginPageLocators.UserName.sendKeys(usname);
+	}
+
+	public void setPassWord(String psw) {
+		loginPageLocators.passWord.sendKeys(psw);
+	}
+
+	public void setLoingbtn() {
+		loginPageLocators.clickBtn.click();
+	}
+
+	public void login(String userName, String passWord) {
+		this.setUserName(userName);
+		this.setPassWord(passWord);
+	}
+
+}
+
 		
 		PageFactory.initElements(DriverClass.getDriver(), loginPageLocators);
 	}
