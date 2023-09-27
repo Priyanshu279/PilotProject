@@ -2,7 +2,7 @@ package com.stepdefinition;
 
 import org.testng.Assert;
 
-import com.pageactions.OrangeHRMHomePageAction;
+import com.pageactions.OrangeHRMHomePageActions;
 import com.pageactions.OrangeHRMLoginPageActions;
 import com.pageutilities.DriverClass;
 
@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class OrangeLoginStepDefinition {
-	OrangeHRMHomePageAction oh = new OrangeHRMHomePageAction();
+	OrangeHRMHomePageActions oh = new OrangeHRMHomePageActions();
 	OrangeHRMLoginPageActions ol = new OrangeHRMLoginPageActions();
 	DriverClass dc = null;
 	
