@@ -19,25 +19,25 @@ public class Recruitment_CandiatesObj {
 	public static WebElement selectAdd;
 	
 	@FindBy(xpath ="//input[@placeholder='First Name']")
-	public static WebElement eneterFristName;
+	public static WebElement enterFristName;
 	
 	@FindBy(xpath ="//input[@placeholder='Last Name']")
-	public static WebElement ;
+	public static WebElement enterLastName;
 	
 	@FindBy(xpath ="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[1]/div/div[2]/input")
-	public static WebElement ;
+	public static WebElement enterEmail;
 	
 	
 	@FindBy(xpath = "//button[text()=' Save ']")
-	public static WebElement ;
+	public static WebElement clickSave;
 	
 	@FindBy(xpath ="//input[@placeholder='Type for hints...']")
-	public static WebElement ;
+	public static WebElement searchEnterName;
 	
 	@FindBy(xpath ="//button[text()=' Search ']")
-	public static WebElement ;
+	public static WebElement clicksearch;
 	
 	@FindBy(xpath ="//div[@class='oxd-table-body oxd-card-table-body']/div/div/div/div/div/div/div/div[2]")
-	public static WebElement ;
+	public static WebElement getTextOfthePage;
 	
 }

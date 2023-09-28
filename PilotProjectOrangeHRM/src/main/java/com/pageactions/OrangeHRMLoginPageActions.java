@@ -40,11 +40,3 @@ public class OrangeHRMLoginPageActions {
 	
 }
 
-
-	public void login(String userName, String passWord) {
-		this.setUserName(userName);
-		this.setPassWord(passWord);
-	}
-
-}
-
