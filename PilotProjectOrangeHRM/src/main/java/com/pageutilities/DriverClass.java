@@ -28,7 +28,7 @@ public class DriverClass {
 	// Declaration of required variables...
 	private static DriverClass driverClass;
 	private static WebDriver driver;
-	private static WebDriverWait wait;
+	public static WebDriverWait wait;
 	private final static int TIMEOUT = 10;
 
 	// Initializes a Chrome WebDriver instance, maximizes the browser window, and sets up implicit and explicit wait mechanisms.

@@ -1,5 +1,11 @@
 package com.stepdefinition;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.pageactions.OrangeHRMLoginPageActions;
@@ -11,6 +17,7 @@ public class BugStriker {
 	
 	OrangeHRMLoginPageActions loginBS = new OrangeHRMLoginPageActions();
 	OrangeHRMLoginPageActions logoutBS = new OrangeHRMLoginPageActions();
+	
 	
 	public void setLoginBS() {
 		loginBS.login("Bug Striker","admin123");
@@ -38,4 +45,9 @@ public class BugStriker {
 	public static void setSwitchBeforeWindow(String handles) {
 		DriverClass.getDriver().switchTo().window(handles);
 	}
+	
+//	public static String MyInfo_filePath() {
+//		String my_info = "C:\\Users\\mmaralinganavar\\Desktop\\Pilot Project\\GitOrangeHRM\\PilotProject\\PilotProjectOrangeHRM\\src\\test\\resources\\MyInfo_PersonalDetails.properties";
+//		return my_info;
+//	}
 }
