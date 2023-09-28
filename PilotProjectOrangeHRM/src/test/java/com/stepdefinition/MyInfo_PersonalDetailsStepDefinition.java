@@ -8,7 +8,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class MyInfo_PersonalDetailsStepDefinition {
+public class MyInfo_PersonalDetailsStepDefinition  {
 	
 	MyInfo_PersonalDetailsActions obj1PersonalDetails = new MyInfo_PersonalDetailsActions();
 	OrangeHRMLoginPageActions obj1Login = new OrangeHRMLoginPageActions();
@@ -25,6 +25,6 @@ public class MyInfo_PersonalDetailsStepDefinition {
 
 	@Then("the user should be able to successfully add personal details")
 	public void VerifySave() {
-		System.out.println("Saved Info");
+		System.out.println("Saved");
 	}
 }
