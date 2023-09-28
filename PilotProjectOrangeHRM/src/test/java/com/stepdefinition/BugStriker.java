@@ -1,8 +1,11 @@
-package com.pageutilities;
+package com.stepdefinition;
 
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.pageactions.OrangeHRMLoginPageActions;
+import com.pageutilities.DriverClass;
+
+import io.cucumber.java.en.When;
 
 public class BugStriker {
 	
@@ -11,6 +14,11 @@ public class BugStriker {
 	
 	public void setLoginBS() {
 		loginBS.login("Bug Striker","admin123");
+	}
+	
+	@When("User enter the {string} and {string}")
+	public void user_enter_the_and(String UserName, String Password) {
+	    loginBS.login(UserName, Password);
 	}
 	
 	public void setLogoutBS() {

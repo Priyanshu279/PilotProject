@@ -6,9 +6,6 @@ package com.pageutilities;
 *	@since JDK17 22/09/2023
 */
 
-import java.time.Duration;
-package com.pageutilities;
-
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -79,3 +76,4 @@ public class DriverClass {
 
 		driverClass = null;
 	}
+}
