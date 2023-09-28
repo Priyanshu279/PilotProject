@@ -19,5 +19,6 @@ public class OrangeHRMLocator {
 	
 	@FindBy(partialLinkText ="Logout")
 	public static WebElement clickLogout;
+	
 }
 
