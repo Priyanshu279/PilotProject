@@ -4,18 +4,35 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class MyInfo_PersonalDetailsObjects {
-	
-	@FindBy(xpath="//body/div[@id='app']/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[6]/a[1]")
-	public static WebElement MyInfoTab;
 
-	@FindBy(xpath="//input[@class=\"oxd-input oxd-input--active oxd-input--error orangehrm-firstname\"]")
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[1]/div[2]/input")
 	public static WebElement EmpFirstNameInput;
 	
-	@FindBy(xpath="//input[@placeholder=\"Last Name\"]")
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div/div/div[2]/div[3]/div[2]/input")
 	public static WebElement EmpLastNameInput;
 	 
-	@FindBy(xpath="")
-	public static WebElement ;
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[1]/div[1]/div/div[2]/input")
+	public static WebElement EmployeeId;
 	
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[1]/div/div[2]/input")
+	public static WebElement DriverLicenseNumber;
+	
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div[2]/div[2]/div/div[2]/div/div/input")
+	public static WebElement ExpiryDate;
+	
+	@FindBy(xpath ="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[1]/div[1]/div/div[2]/div/div/div[1]")
+	public static WebElement Nationality;
+	
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[1]/div/div[2]/div/div/input")
+	public static WebElement DateOfBirth;
+	
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/label/span")
+	public static WebElement Gender;
+	
+	@FindBy(xpath="/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/div/div[1]/div/div[2]/input")
+	public static WebElement MilitaryService;
+	
+	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button")
+	public static WebElement SaveBtn;
 	
 }
