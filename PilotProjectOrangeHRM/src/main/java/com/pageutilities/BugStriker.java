@@ -14,7 +14,7 @@ public class BugStriker {
 	}
 	
 	public void setLogoutBS() {
-		logoutBS.setLogOut();
+//		logoutBS.setLogOut();
 	}
 	
 	public static void WindowScroll(String num){
