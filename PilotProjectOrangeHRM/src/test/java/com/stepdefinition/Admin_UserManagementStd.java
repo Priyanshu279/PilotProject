@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 import com.pageactions.Admin_UserManagementActions;
-import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.en.Given;
@@ -20,12 +19,13 @@ import io.cucumber.java.en.When;
 public class Admin_UserManagementStd {
 	Admin_UserManagementActions aum = new Admin_UserManagementActions();
 	BugStriker bs = new BugStriker();
-
+		
 	@Given("Select Admin")
 	public void select_admin() {
 	   aum.setAdmin();
 	}	
 	
+		
 	@Given("Select User Management and click on user")
 	public void select_user_management_and_click_on_user() {
 	    aum.setUserManagement();
@@ -64,6 +64,7 @@ public class Admin_UserManagementStd {
 	@Then("User Check Weather New user Added or not")
 	public void user_check_weather_new_user_added_or_not() throws IOException {
 		bs.WindowScroll("200");
+		Assert.assertEquals(aum.getUserName(), "Bug Striker");
 		//****
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\UserisAddedorNot.png"));

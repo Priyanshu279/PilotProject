@@ -90,10 +90,10 @@ public class MyInfo_PersonalDetailsActions {
 	public void clickSaveBtn() {
 		myInfo_PersonalDetailsObjects.SaveBtn.click();
 	}
-
+	
 	public void Save() {
 
-		File file = new File("C:\\Users\\psuryavanshi2\\Documents\\GitPriyanshu\\PilotProject\\PilotProjectOrangeHRM\\src\\test\\resources\\features\\MyInfo_PersonalDetails.properties");
+		File file = new File("C:\\Users\\mmaralinganavar\\Desktop\\Pilot Project\\GitOrangeHRM\\PilotProject\\PilotProjectOrangeHRM\\src\\test\\resources\\MyInfo_PersonalDetails.properties");
 		FileInputStream fileInput = null;
 		try {
 			fileInput = new FileInputStream(file);

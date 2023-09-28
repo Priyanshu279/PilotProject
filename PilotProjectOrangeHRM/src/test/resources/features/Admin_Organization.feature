@@ -7,8 +7,8 @@ And click the Login btn
 Given Select Admin
 
 @ValidatingGeneralInfo
-Scenario: Checking the functionality of General Informationf in Organization
-When Click on Organization and select General Informationf
+Scenario: Checking the functionality of General Information in Organization
+When Click on Organization and select General Information
 And Click on Edit and fill the details 
 Then Take screeshotUser succesfully
 

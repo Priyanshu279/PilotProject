@@ -1,7 +1,10 @@
 package com.pageactions;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.pageobjects.Admin_HelpObj;
 import com.pageutilities.DriverClass;
@@ -17,7 +20,7 @@ public class Admin_HelpActions {
 	
 	public void setClickHelp() throws InterruptedException {
 		ahobj.clikHelp.click();
-		Thread.sleep(3000);
+//		WebElement objs = DriverClass.wait.until(ExpectedConditions.elementToBeClickable(ahobj.clikHelp)); 
 		ahobj.clikHelp.sendKeys(Keys.CONTROL,Keys.TAB);
 	}
 	

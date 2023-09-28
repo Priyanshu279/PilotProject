@@ -6,6 +6,7 @@ When Use enter login details
 And click the Login btn
 Given Select Admin
 
+
 Scenario: Checking the functionality of Skills in Qualification
 When Click on Qualification and select Skills
 And Click on Add fill the details 

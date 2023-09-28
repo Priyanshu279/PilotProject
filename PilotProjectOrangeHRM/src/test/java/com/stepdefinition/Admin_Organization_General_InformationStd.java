@@ -17,8 +17,8 @@ import io.cucumber.java.en.When;
 public class Admin_Organization_General_InformationStd {
 	Admin_OrganizationActions aorg = new Admin_OrganizationActions();
 	
-	@When("Click on Organization and select General Informationf")
-	public void click_on_organization_and_select_general_informationf() {
+	@When("Click on Organization and select General Information")
+	public void click_on_organization_and_select_general_information() {
 	    aorg.setOrganization();
 	    aorg.setGeneralinfo();
 	}
