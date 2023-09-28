@@ -1,17 +1,17 @@
 package com.stepdefinition;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class HooKs {
@@ -21,6 +21,12 @@ public class HooKs {
 	public void Use_enter_login_details(){
 		bs.setLoginBS();
 	}
+	
+//	@Then("Click Screenshot {string}")
+//	public void click_screenshot(String NameofImg) throws IOException {
+//		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(screenshotfile,new File("Screenshots\\"+NameofImg+".png"));
+//	}
 	
 	@After(order = 1)
 	public void takeScreenshot(Scenario scenario) throws IOException{

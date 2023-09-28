@@ -8,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import com.pageactions.Admin_OrganizationActions;
-import com.pageutilities.BugStriker;
 import com.pageutilities.DriverClass;
 
 import io.cucumber.java.en.Then;
@@ -35,10 +34,11 @@ public class Admin_Organization_LocationStd {
 	}
 
 	@When("Click on Organization and select Location for search")
-	public void click_on_organization_and_select_location_for_search() {
+	public void click_on_organization_and_select_location_for_search() throws InterruptedException {
 		aorg.setOrganization();
 		aorg.setLocation();
 	    aorg.setSelectLocation();
+	    Thread.sleep(3000);
 	}
 
 	@When("User Click the Search Btn in Organiztion")
