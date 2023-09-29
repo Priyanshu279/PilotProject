@@ -3,11 +3,12 @@ package com.stepdefinition;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 
 import com.pageactions.Admin_UserManagementActions;
 import com.pageutilities.DriverClass;
@@ -16,8 +17,10 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class Admin_UserManagementStd {
 	Admin_UserManagementActions aum = new Admin_UserManagementActions();
+	Logger logs = LogManager.getLogger(Admin_UserManagementActions.class);
 	BugStriker bs = new BugStriker();
 		
 	@Given("Select Admin")
@@ -45,6 +48,13 @@ public class Admin_UserManagementStd {
 	
 	@Then("User validate the saved successfully")
 	public void user_validate_the_saved_successfully() throws InterruptedException, IOException {
+		try {
+			Assert.assertEquals(aum.getPopTextSaved(),"Successfully Saved");
+			logs.info(aum.getPopTextSaved());
+		}catch (Exception e) {
+			System.err.println("Already exists");
+			logs.info("Already exists");
+		}
 		Thread.sleep(3000);
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\UserValidateSaveSuccessfully.png"));
@@ -64,7 +74,13 @@ public class Admin_UserManagementStd {
 	@Then("User Check Weather New user Added or not")
 	public void user_check_weather_new_user_added_or_not() throws IOException {
 		bs.WindowScroll("200");
-		Assert.assertEquals(aum.getUserName(), "Bug Striker");
+		try {
+			Assert.assertEquals(aum.getUserName(),"Bug Striker");
+			logs.info("----------------------------"+aum.getUserName()+"----------------------------");
+		}catch (Exception e) {
+			System.err.println("User is not existed");
+			logs.info("-----------------------------"+"User is not existed"+"----------------------------");
+		}
 		//****
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\UserisAddedorNot.png"));

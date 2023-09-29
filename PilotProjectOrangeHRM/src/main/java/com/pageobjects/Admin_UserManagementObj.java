@@ -53,4 +53,7 @@ public class Admin_UserManagementObj {
 	@FindBy(xpath ="//div[contains(text(),'Bug Striker')]")
 	public static WebElement checktheUserName;
 	
+	@FindBy(xpath ="//p[text()='Successfully Saved']")
+	public static WebElement selectpop;
+	
 }

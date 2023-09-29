@@ -37,4 +37,8 @@ public class Admin_QualificationActions {
 		aqobj.clickSaveSillks.click();
 	}
 	
+	public String getPopTextSaved() {
+		return aqobj.selectpop.getText();
+	}
+	
 }

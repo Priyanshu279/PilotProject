@@ -19,4 +19,7 @@ public class Admin_QualificationObj {
 		
 		@FindBy(xpath = "//button[text()=' Save ']")
 		public static WebElement clickSaveSillks;
+		
+		@FindBy(xpath ="//p[text()='Successfully Saved']")
+		public static WebElement selectpop;
 }
