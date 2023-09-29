@@ -1,6 +1,6 @@
 
 
-@tag
+@entitlements
 Feature: Add Entitlements
 
 Background: 
@@ -10,7 +10,7 @@ And click the Login btn
 Given the user should on leave home page
 When the user click on add entitlements from entitlements dropdown mwnu
 
-  @tag1
+  @validData
  Scenario: The user Add Entitlements with valid data
     And the user click on add to
     And the user enter name
@@ -20,7 +20,7 @@ When the user click on add entitlements from entitlements dropdown mwnu
     And the user click on confirm 
     Then the user should added  leave entitlements successfully 
 
-
+@missingRequiredFields
 Scenario: The user Addd Entitlements without filling required fields
 		 And the user select leave type and leave period 
 		 And the user enter leave entitlement 

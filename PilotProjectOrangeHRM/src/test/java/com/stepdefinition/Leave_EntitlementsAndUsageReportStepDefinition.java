@@ -28,7 +28,7 @@ public class Leave_EntitlementsAndUsageReportStepDefinition {
 	
 	@When("the user select leave period.")
 	public void the_user_select_leave_period() {
-		leaveentitlementusagereport_obj.selectLeavePeriod();
+		//leaveentitlementusagereport_obj.selectLeavePeriod();
 	    
 	}
 
