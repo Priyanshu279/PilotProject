@@ -33,8 +33,9 @@ public class Admin_Organization_General_InformationStd {
 	}
 
 	@Then("Take screeshotUser succesfully")
-	public void take_screeshot_user_validate_the_saved_succesfully() throws IOException {
+	public void take_screeshot_user_validate_the_saved_succesfully() throws IOException, InterruptedException {
 		File screenshotfile = ((TakesScreenshot)DriverClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotfile,new File("Screenshots\\OrganizationEdited.png"));
+		Thread.sleep(2000);
 	}
 }
