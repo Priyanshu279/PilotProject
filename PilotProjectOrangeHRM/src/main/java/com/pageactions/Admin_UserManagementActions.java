@@ -89,4 +89,8 @@ public class Admin_UserManagementActions {
 	public String getUserName() {
 		return userManagementObj.checktheUserName.getText();
 	}
+	
+	public String getPopTextSaved() {
+		return userManagementObj.selectpop.getText();
+	}
 }

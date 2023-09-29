@@ -1,4 +1,4 @@
-Feature: Validating the Admin Functionality in Pay Grades
+Feature: Validating the Admin Functionality of Job
 #Common Login
 Background:
 Given Open Browser OrangeHRM "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
