@@ -12,7 +12,7 @@ public class Recruitment_CandiatesObj {
 	@FindBy(linkText = "Recruitment")
 	public static WebElement selectRecruitment;
 	
-	@FindBy(xpath = "//span[text()='Candidates']")
+	@FindBy(xpath = "//a[text()='Candidates']")
 	public static WebElement selectCandidates;
 	
 	@FindBy(xpath = "//button[text()=' Add ']")
